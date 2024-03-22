@@ -23,3 +23,31 @@ class HelloWorld {
       System.out.println(sb);
     }
 }
+----------------------------------------------------------------------------------------------------------------------------------
+is SUBSEQUENCE
+-------------
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+    System.out.println( HelloWorld.Test());
+    }
+    public static boolean Test(){
+    String name="abc";
+    String name1="anjbttctjbk";
+    int i=0;int j=0;
+    while(j<name1.length()){
+        if(name.charAt(i)==name1.charAt(j)){
+            i++;
+            if(i==name.length()){
+                return true;
+            }
+        }
+        j++;
+    }
+    return false;
+        
+    }
+}
+
+Output: abc from one string is equal to another string with out changing order sequence
